@@ -43,6 +43,37 @@ contactly/
     │       └── validators.js
     └── README.md              # Frontend-specific README (optional)
 
+## Backend Setup Instructions
+
+1. Navigate to the backend folder: cd backend
+2. Install dependencies: npm install
+3. Create a .env file based on .env.example and fill in your credentials:
+
+SMTP_HOST=smtp.gmail.com
+SMTP_PORT=465
+SMTP_SECURE=true
+SMTP_USER=your_email@example.com
+SMTP_PASS=your_app_password
+FROM_EMAIL=your_email@example.com
+TO_EMAIL=your_email@example.com
+
+
+4. Run the backend server: npm run dev
+
+Backend server runs on http://localhost:4000 by default.
+
+## Frontend Setup Instructions
+
+1. Navigate to the frontend folder: cd frontend
+2. Install dependencies: npm install
+3. Start the frontend React app: npm start
+Frontend runs on http://localhost:3000 by default.
+Ensure the backend server is running for the form to submit correctly.
+
+4. (Optional) Configure backend API URL in frontend .env:
+REACT_APP_BACKEND_URL=http://localhost:4000
+
+
 ## How Contact Form and Email Work
 
 - When the user submits the form, the frontend sends a POST request to the backend /api/contact endpoint.
