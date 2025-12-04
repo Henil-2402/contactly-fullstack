@@ -46,8 +46,9 @@ ${message}
 `;
 
     await transporter.sendMail({
-      from: process.env.FROM_EMAIL || process.env.SMTP_USER,
-      to: process.env.TO_EMAIL || process.env.SMTP_USER,
+      from: process.env.FROM_EMAIL,
+      to: process.env.TO_EMAIL,
+      cc: process.env.CC_EMAIL, 
       subject: `Contact form: ${name}`,
       text: mailBody,
     });
