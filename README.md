@@ -99,3 +99,14 @@ Message
   Phone	    Required, must be 10–15 digits
   Message	Required, cannot be empty
   Honeypot	Must be empty (used to detect bots)
+
+## .env.example
+
+PORT=4000
+SMTP_HOST=smtp.example.com
+SMTP_PORT=587
+SMTP_SECURE=false
+SMTP_USER=you@example.com
+SMTP_PASS=yourpassword
+FROM_EMAIL=you@example.com
+TO_EMAIL=recipient@example.com
