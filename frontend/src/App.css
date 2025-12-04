@@ -1,0 +1,51 @@
+body {
+  font-family: Arial;
+  background: #f5f5f5;
+}
+
+.container {
+  max-width: 500px;
+  margin: 40px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+textarea {
+  margin-bottom: 12px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px;
+  background: black;
+  color: white;
+  cursor: pointer;
+}
+
+.msg {
+  color: green;
+  font-weight: bold;
+}
+.error {
+  color: red;
+  font-size: 0.85rem;
+  margin-top: 4px;
+}
+
+.success {
+  color: green;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.input-error {
+  border: 1px solid red;
+}
